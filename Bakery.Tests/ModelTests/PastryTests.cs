@@ -79,6 +79,15 @@ namespace Bakery.Tests
       Assert.AreEqual("1 Pastry", result);
     }
 
+    [TestMethod]
+    public void ReturnAmountofPastries_ReturnsPastryDetailsTest2_String()
+    {
+      int userInput = 100;
+      Pastry newPastry = new Pastry(userInput);
+      string result = newPastry.returnAmountofPastries();
+      Assert.AreEqual("100 Pastries", result);
+    }
+
 
 
   }
