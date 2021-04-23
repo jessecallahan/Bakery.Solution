@@ -58,7 +58,7 @@ namespace Bakery.Tests
       int userInput = 3;
       Pastry newPastry = new Pastry(userInput);
       int result = newPastry.returnPastryTotalCost();
-      Assert.AreEqual(4, result);
+      Assert.AreEqual(5, result);
     }
 
     // [TestMethod]
