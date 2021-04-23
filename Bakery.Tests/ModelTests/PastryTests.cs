@@ -76,7 +76,7 @@ namespace Bakery.Tests
       int userInput = 1;
       Pastry newPastry = new Pastry(userInput);
       string result = newPastry.returnAmountofPastries();
-      Assert.AreEqual("1 pastry", result);
+      Assert.AreEqual("1 Pastry", result);
     }
 
 
