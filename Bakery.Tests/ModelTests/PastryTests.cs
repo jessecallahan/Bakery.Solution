@@ -31,8 +31,17 @@ namespace Bakery.Tests
       int userInput = 0;
       Pastry newPastry = new Pastry(userInput);
       int result = newPastry.returnPastryTotalCost();
-      Assert.AreEqual(44, result);
+      Assert.AreEqual(0, result);
     }
+
+    // [TestMethod]
+    // public void ReturnPastryTotalCost_ReturnsPastryTotalCostTest2_Int()
+    // {
+    //   int userInput = 1;
+    //   Pastry newPastry = new Pastry(userInput);
+    //   int result = newPastry.returnPastryTotalCost();
+    //   Assert.AreEqual(, result);
+    // }
 
     // [TestMethod]
     // public void PastryTotal_ReturnsPastryDetails_String()
