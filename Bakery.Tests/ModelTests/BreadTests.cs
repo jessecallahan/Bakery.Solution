@@ -70,16 +70,13 @@ namespace Bakery.Tests
       Assert.AreEqual(15, result);
     }
 
-    // [TestMethod]
-    // public void GetDescription_ReturnsDescription_String()
-    // {
-    //   //Arrange 
-    //   string description = "Walk the dog.";
-    //   Item newItem = new Item(description);
-    //   //Act
-    //   string result = newItem.Description;
-    //   //Assert
-    //   Assert.AreEqual(description, result);
-    // }
+    [TestMethod]
+    public void ReturnAmountofBread_ReturnsBreadDetailsTest1_String()
+    {
+      int userInput = 1;
+      Bread newBread = new Bread(userInput);
+      string result = newBread.returnAmountofBread();
+      Assert.AreEqual("1 loaf of Bread", result);
+    }
   }
 }
