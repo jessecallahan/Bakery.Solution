@@ -21,7 +21,7 @@ namespace Bakery.Tests
     {
       int userInput = 1;
       Bread newBread = new Bread(userInput);
-      int result = 10;
+      int result = newBread.Amount;
       Assert.AreEqual(userInput, result);
     }
 
