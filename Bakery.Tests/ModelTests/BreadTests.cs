@@ -28,7 +28,7 @@ namespace Bakery.Tests
     [TestMethod]
     public void ReturnBreadTotalCost_ReturnsBreadTotalCostTest1_Int()
     {
-      int userInput = 11;
+      int userInput = 0;
       Bread newBread = new Bread(userInput);
       int result = newBread.returnBreadTotalCost();
       Assert.AreEqual(0, result);
