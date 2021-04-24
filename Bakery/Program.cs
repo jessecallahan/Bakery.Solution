@@ -8,6 +8,12 @@ namespace Bakery
   {
     public static void Main()
     {
+      MenuPopUp();
+      Transaction();
+    }
+
+    static void MenuPopUp()
+    {
       Console.WriteLine("");
       Console.WriteLine("Welcome to Pierre's Bakery");
       Console.WriteLine("----------------------");
@@ -16,6 +22,10 @@ namespace Bakery
       Console.WriteLine("$5/Loaf - Buy 2, Get One Free");
       Console.WriteLine("Pastry:");
       Console.WriteLine("$2/Pastry - 3 Pastries for $5");
+    }
+
+    static void Transaction()
+    {
       Console.WriteLine("");
       Console.WriteLine("How much bread would you like?");
       Console.WriteLine("(Enter the amount of loaves as a number)");
@@ -25,6 +35,7 @@ namespace Bakery
       Bread newBread = new Bread(breadInput);
       int breadCost = newBread.returnBreadTotalCost();
       string breadDetails = newBread.returnAmountofBread();
+
       Console.WriteLine("");
       Console.WriteLine("How many pastries would you like?");
       Console.WriteLine("(Enter the amount of pastries as a number)");
@@ -35,6 +46,7 @@ namespace Bakery
       int pastryCost = newpastry.returnPastryTotalCost();
       string pastryDetails = newpastry.returnAmountofPastries();
       Console.WriteLine("");
+
       int orderTotal = pastryCost + breadCost;
       Console.WriteLine($"Your order is ${orderTotal}");
       Console.WriteLine($"{pastryDetails} and {breadDetails}");
