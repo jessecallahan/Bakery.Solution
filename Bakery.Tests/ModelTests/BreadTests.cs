@@ -78,5 +78,14 @@ namespace Bakery.Tests
       string result = newBread.returnAmountofBread();
       Assert.AreEqual("1 Loaf of Bread", result);
     }
+
+    [TestMethod]
+    public void ReturnAmountofBread_ReturnsBreadDetailsTest2_String()
+    {
+      int userInput = 2;
+      Bread newBread = new Bread(userInput);
+      string result = newBread.returnAmountofBread();
+      Assert.AreEqual("2 Loaves of Bread", result);
+    }
   }
 }
