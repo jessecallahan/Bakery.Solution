@@ -31,8 +31,7 @@ _**Bread Object**_
 | 3  |  "bread" | $10  | ReturnBreadTotalCost_ReturnsBreadTotalCostTest4_Int() |
 | 4  |  "bread" | $15  | ReturnBreadTotalCost_ReturnsBreadTotalCostTest5_Int() |
 | 1  |  "bread" | "1 Loaf of Bread" | ReturnAmountofBread_ReturnsBreadDetailsTest1_String() |
-| 2  |  "bread" | "3 Loaves of Bread" Note: Remember you cannot order 2 loaves, you always get that third one for free  | 
-ReturnAmountofBread_ReturnsBreadDetailsTest2_String() 
+| 2  |  "bread" | "3 Loaves of Bread" Note: Remember you cannot order 2 loaves, you always get that third one for free| 
 
 _**Pastry Object**_
 
