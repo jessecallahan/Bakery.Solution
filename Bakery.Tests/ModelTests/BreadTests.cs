@@ -85,7 +85,7 @@ namespace Bakery.Tests
       int userInput = 2;
       Bread newBread = new Bread(userInput);
       string result = newBread.returnAmountofBread();
-      Assert.AreEqual("2 Loaves of Bread", result);
+      Assert.AreEqual("3 Loaves of Bread", result);
     }
   }
 }
