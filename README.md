@@ -21,12 +21,27 @@ Pierre's Bakery is a C# application that uses two classes, Bread and Pastries. B
 
 |  Amount/User Input|  Type | Output  | Test Function |
 |---|---|---|---|
-| 1  |  "bread" | $5 | "1 Loaf of Bread"|
-| 2  |  "bread"  | $10 | "3 Loaves of Bread |
-| 1  |  "pastry" | $2 | "1 Pastry"|
-| 3  |  "pastry" | $5  | "3 Pastries |
-| 2 bread, 3 pastry  |  "bread and pastries" | $15 | "2 bread, 3 pastry" |
-| 5 bread, 7 pastry  |  "bread and pastries" | $27 | "5 bread, 7 pastry" |
+| 1  |  "bread" | Instance of Bread is Bread type | BreadConstructor_CreatesInstanceOfBread_Bread() | 
+| 1  |  "bread"  | Amount is being recognized | GetAmount_ReturnsBreadAmount_Int() |
+| 0  |  "bread" | $0 | "1 Pastry"|ReturnBreadTotalCost_ReturnsBreadTotalCostTest1_Int()|
+| 1  |  "bread" | $5  | ReturnBreadTotalCost_ReturnsBreadTotalCostTest2_Int() |
+| 2  |  "bread" | $10  | ReturnBreadTotalCost_ReturnsBreadTotalCostTest3_Int() |
+| 3  |  "bread" | $10  | ReturnBreadTotalCost_ReturnsBreadTotalCostTest4_Int() |
+| 4  |  "bread" | $15  | ReturnBreadTotalCost_ReturnsBreadTotalCostTest5_Int() |
+| 1  |  "bread" | "1 Loaf of Bread" | ReturnAmountofBread_ReturnsBreadDetailsTest1_String() |
+| 2  |  "bread" | "3 Loaves of Bread" Note: Remember you cannot order 2 loaves, you always get that third one for free  | 
+
+|  Amount/User Input|  Type | Output  | Test Function |
+|---|---|---|---|
+| 1  |  "bread" | Instance of Bread is Bread type | BreadConstructor_CreatesInstanceOfBread_Bread() | 
+| 1  |  "bread"  | Amount is being recognized | GetAmount_ReturnsBreadAmount_Int() |
+| 0  |  "bread" | $0 | "1 Pastry"|ReturnBreadTotalCost_ReturnsBreadTotalCostTest1_Int()|
+| 1  |  "bread" | $5  | ReturnBreadTotalCost_ReturnsBreadTotalCostTest2_Int() |
+| 2  |  "bread" | $10  | ReturnBreadTotalCost_ReturnsBreadTotalCostTest3_Int() |
+| 3  |  "bread" | $10  | ReturnBreadTotalCost_ReturnsBreadTotalCostTest4_Int() |
+| 4  |  "bread" | $15  | ReturnBreadTotalCost_ReturnsBreadTotalCostTest5_Int() |
+| 1  |  "bread" | "1 Loaf of Bread" | ReturnAmountofBread_ReturnsBreadDetailsTest1_String() |
+| 2  |  "bread" | "3 Loaves of Bread" Note: Remember you cannot order 2 loaves, you always get that third one for free  | 
 
 ## Technologies Used
 * C#
