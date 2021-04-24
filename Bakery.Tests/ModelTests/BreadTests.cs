@@ -61,6 +61,15 @@ namespace Bakery.Tests
       Assert.AreEqual(10, result);
     }
 
+    [TestMethod]
+    public void ReturnBreadTotalCost_ReturnsBreadTotalCostTest5_Int()
+    {
+      int userInput = 4;
+      Bread newBread = new Bread(userInput);
+      int result = newBread.returnBreadTotalCost();
+      Assert.AreEqual(10, result);
+    }
+
     // [TestMethod]
     // public void GetDescription_ReturnsDescription_String()
     // {
