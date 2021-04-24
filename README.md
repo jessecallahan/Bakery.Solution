@@ -19,7 +19,7 @@ Pierre's Bakery is a C# application that uses two classes, Bread and Pastries. B
 
 ## Specs
 
-|  Amount/User Input|  Type | Total Cost  | Output
+|  Amount/User Input|  Type | Output  | Test Function |
 |---|---|---|---|
 | 1  |  "bread" | $5 | "1 Loaf of Bread"|
 | 2  |  "bread"  | $10 | "3 Loaves of Bread |

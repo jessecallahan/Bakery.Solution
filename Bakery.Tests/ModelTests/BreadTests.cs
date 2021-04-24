@@ -87,5 +87,6 @@ namespace Bakery.Tests
       string result = newBread.returnAmountofBread();
       Assert.AreEqual("3 Loaves of Bread", result);
     }
+
   }
 }
