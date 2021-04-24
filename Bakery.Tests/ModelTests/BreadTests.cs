@@ -34,6 +34,23 @@ namespace Bakery.Tests
       Assert.AreEqual(0, result);
     }
 
+    [TestMethod]
+    public void ReturnBreadTotalCost_ReturnsBreadTotalCostTest2_Int()
+    {
+      int userInput = 1;
+      Bread newBread = new Bread(userInput);
+      int result = newBread.returnBreadTotalCost();
+      Assert.AreEqual(10, result);
+    }
+
+    // [TestMethod]
+    // public void ReturnBreadTotalCost_ReturnsBreadTotalCostTest3_Int()
+    // {
+    //   int userInput = 2;
+    //   Bread newBread = new Bread(userInput);
+    //   int result = newBread.returnBreadTotalCost();
+    //   Assert.AreEqual(10, result);
+    // }
     // [TestMethod]
     // public void GetDescription_ReturnsDescription_String()
     // {
