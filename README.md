@@ -6,7 +6,7 @@ By _**Jesse Callahan**_</br>
 Contact: _**Jessetylercallahan@gmail.com**_</br>
 
 ## Description
-Pierre's Bakery is a C# application that uses two classes, pastries and Pastries. Based on the user's input and the built-in "deals", these classes sum the cost of buying goods at the bakery.
+Pierre's Bakery is a C# application that uses two classes, Bread and Pastry. Based on the user's input and the built-in "deals", these classes sum the cost of buying goods at the bakery.
 
 ## Setup/Installation Requirements
 
