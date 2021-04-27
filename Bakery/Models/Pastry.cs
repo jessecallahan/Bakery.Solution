@@ -11,11 +11,11 @@ namespace Bakery.Models
     public Pastry(int amount)
     {
       Amount = amount;
-      _totalPastriesCost = pastryTotalLogic(Amount);
-      _pastryDetails = pastryDetailsLogic(Amount);
+      _totalPastriesCost = PastryTotalLogic(Amount);
+      _pastryDetails = PastryDetailsLogic(Amount);
     }
 
-    public static int pastryTotalLogic(int userAmount)
+    public int PastryTotalLogic(int userAmount)
     {
       int x = userAmount / 3;
       int y = x * 3;
@@ -24,7 +24,7 @@ namespace Bakery.Models
       return total;
     }
 
-    public static string pastryDetailsLogic(int userAmount)
+    public string PastryDetailsLogic(int userAmount)
     {
       if (userAmount == 1)
       {
@@ -36,11 +36,11 @@ namespace Bakery.Models
       }
     }
 
-    public int returnPastryTotalCost()
+    public int ReturnPastryTotalCost()
     {
       return _totalPastriesCost;
     }
-    public string returnAmountofPastries()
+    public string ReturnAmountofPastries()
     {
       return _pastryDetails;
     }

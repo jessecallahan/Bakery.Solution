@@ -15,11 +15,11 @@ namespace Bakery.Models
         amount = 3;
       }
       Amount = amount;
-      _totalBreadCost = breadTotalLogic(Amount);
-      _breadDetails = breadDetailsLogic(Amount);
+      _totalBreadCost = BreadTotalLogic(Amount);
+      _breadDetails = BreadDetailsLogic(Amount);
     }
 
-    public static int breadTotalLogic(int userAmount)
+    public int BreadTotalLogic(int userAmount)
     {
       int x = userAmount / 3;
       int y = x * 3;
@@ -27,7 +27,7 @@ namespace Bakery.Models
       int total = (z * 5) + (x * 10);
       return total;
     }
-    public static string breadDetailsLogic(int userAmount)
+    public string BreadDetailsLogic(int userAmount)
     {
       if (userAmount == 1)
       {
@@ -38,11 +38,11 @@ namespace Bakery.Models
         return userAmount + " Loaves of Bread";
       }
     }
-    public int returnBreadTotalCost()
+    public int ReturnBreadTotalCost()
     {
       return _totalBreadCost;
     }
-    public string returnAmountofBread()
+    public string ReturnAmountofBread()
     {
       return _breadDetails;
     }

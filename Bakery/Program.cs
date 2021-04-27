@@ -33,8 +33,8 @@ namespace Bakery
 
       int breadInput = int.Parse(System.Console.ReadLine());
       Bread newBread = new Bread(breadInput);
-      int breadCost = newBread.returnBreadTotalCost();
-      string breadDetails = newBread.returnAmountofBread();
+      int breadCost = newBread.ReturnBreadTotalCost();
+      string breadDetails = newBread.ReturnAmountofBread();
 
       Console.WriteLine("");
       Console.WriteLine("How many pastries would you like?");
@@ -43,8 +43,8 @@ namespace Bakery
 
       int pastryInput = int.Parse(System.Console.ReadLine());
       Pastry newpastry = new Pastry(pastryInput);
-      int pastryCost = newpastry.returnPastryTotalCost();
-      string pastryDetails = newpastry.returnAmountofPastries();
+      int pastryCost = newpastry.ReturnPastryTotalCost();
+      string pastryDetails = newpastry.ReturnAmountofPastries();
       Console.WriteLine("");
 
       int orderTotal = pastryCost + breadCost;
