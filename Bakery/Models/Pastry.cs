@@ -40,6 +40,7 @@ namespace Bakery.Models
     {
       return _totalPastriesCost;
     }
+
     public string ReturnAmountofPastries()
     {
       return _pastryDetails;

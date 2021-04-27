@@ -27,6 +27,7 @@ namespace Bakery.Models
       int total = (z * 5) + (x * 10);
       return total;
     }
+
     public string BreadDetailsLogic(int userAmount)
     {
       if (userAmount == 1)
@@ -38,6 +39,7 @@ namespace Bakery.Models
         return userAmount + " Loaves of Bread";
       }
     }
+
     public int ReturnBreadTotalCost()
     {
       return _totalBreadCost;
